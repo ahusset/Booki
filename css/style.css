@@ -196,6 +196,11 @@ input[type="text"] {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.star-icons {
+    color: var(--main-color);
+    padding: 0 0 10px 10px;
+}
 /****** Populaires ***********/
 .populaires {
     width: 31%;
