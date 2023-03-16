@@ -37,7 +37,7 @@ li {
 
 #nav {
     display: flex;
-    height: 80px;
+    height: 79px;
     align-items: center;
     justify-content: center;
 }
@@ -73,6 +73,9 @@ li {
 body {
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
+
 }
 
 .main-container {
@@ -108,6 +111,7 @@ input[type="text"] {
     position: relative;
     display: flex;
     align-items: center;
+    margin-top: 35px;
 }
 .fa-map-marker-alt {
     position: absolute;
@@ -132,7 +136,20 @@ input[type="text"] {
     width: 120px;
 }
 
-
+.fa-info {
+    color: var(--main-color);
+    padding: 7px 12px;
+    border: 1px solid #d3d3d3;
+    border-radius: 50%;
+}
+#PaddingP {
+    padding-left: 50px;
+    position: relative;
+    bottom: 40px;
+}
+.PaddingPI {
+    padding-top: 30px;
+}
 .card {
     background-color: white;
     border-radius: 20px;
@@ -171,13 +188,14 @@ input[type="text"] {
 
 /****** Hebergements ***********/
 .hebergements {
-    background-color: #f2f2f2;
+    background-color: var(--main-bg-color);
     border-radius: 20px;
     margin-right: 20px;
     width: 60%;
 }
 .hebergements h2 {
     font-size: 22px;
+    margin: 0;
 }
 
 .hebergements img {
@@ -190,10 +208,11 @@ input[type="text"] {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 33px;
 }
 
 .miniBordure {
-    border: 1px solid #f2f2f2;
+    border: 1px solid var(--main-bg-color);
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 0 6px 3px #b1b1b14b;
@@ -275,6 +294,45 @@ input[type="text"] {
 .populaires-cards .card-rating {
     margin-bottom: 7px;
     padding: 0;
+}
+/************ Activités  ************/
+
+#activite {
+
+    padding-bottom: 50px;
+}
+
+#Activites_groupe {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#activite h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+}
+
+#activite H3 {
+    margin: 15px 10px;
+    color: black;
+}
+
+.activite_card {
+    border: 1px solid var(--main-bg-color);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
+    margin-bottom: 40px;
+    width: 23%;
+}
+
+.activite_card img {
+    object-fit: cover;
+    width: 100%;
+    height: 380px;
+    border-radius: 15px 15px 0 0;
 }
 
 /**************************** FOOTER ****************************/
