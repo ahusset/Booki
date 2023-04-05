@@ -29,23 +29,23 @@ li {
 }
 /*********************NAVBAR*********************/
 .items {
-    text-decoration: none;
     color: black;
-    height: 100%;
     border-top: 2px solid transparent;
+}
+
+.logo
+{
+    width: 61.09px;
 }
 
 #nav {
     display: flex;
     height: 79px;
-    align-items: center;
-    justify-content: center;
 }
 
 #nav a {
     display: flex;
-    height: 60px;
-    justify-content: center;
+    align-items: center;
 }
 
 #second_flex {
@@ -55,8 +55,11 @@ li {
 }
 
 #second_flex li {
-    font-size: 1.2em;
-    font-weight: bolder;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }
 #second_flex a {
     text-decoration: none;
@@ -69,6 +72,23 @@ li {
 .items:hover {
     border-top: 2px solid var(--main-color);
     color: var(--main-color);
+}
+
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0px;
+}
+
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 8px;
+
 }
 body {
     display: flex;
@@ -83,6 +103,10 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+main{
+    margin-top: 30px;
 }
 
 .section-title {
@@ -145,11 +169,58 @@ input[type="text"] {
 #PaddingP {
     padding-left: 50px;
     position: relative;
-    bottom: 40px;
+    bottom: 35px;
 }
 .PaddingPI {
     padding-top: 30px;
 }
+
+/**************************filtres*********************/
+
+#FiltreStyle {
+    display: flex;
+    align-items: center;
+}
+#FiltreStyle_media {
+    display: flex;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+#FiltreStyle a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#FiltreStyle span {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+.borderFiltres {
+    border: 1px solid #dbe0e4;
+    border-radius: 40px;
+    padding: 0px 15px 0px 15px;
+    margin: 5px;
+}
+#FiltreStyle i {
+    position: relative;
+    right: 18px;
+    border: 2px solid grey;
+    border-radius: 40px;
+    padding: 15px; /**Le Padding Des differentes bordures faites par le padding de l'icone**/
+    background-color: #deebff;
+    color: #0065fc;
+    border: none;
+    outline: none;
+}
+.borderFiltres:hover {
+    background-color: #deebff;
+}
+/******************************************************/
 .card {
     background-color: white;
     border-radius: 20px;
@@ -177,6 +248,7 @@ input[type="text"] {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hebergements-and-populaires section {
@@ -187,18 +259,18 @@ input[type="text"] {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     margin-right: 20px;
     width: 60%;
 }
-.hebergements h2 {
+#hebergements h2 {
     font-size: 22px;
     margin: 0;
 }
 
-.hebergements img {
+#hebergements img {
     width: 100%;
     height: 140px;
     border-radius: 20px 20px 0 0;
@@ -206,7 +278,7 @@ input[type="text"] {
 }
 #BordureFlex_first {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 33px;
 }
@@ -245,10 +317,14 @@ input[type="text"] {
 
 #BordureFlex_second {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
-
+.other-page {
+    font-weight: bold;
+    padding: 30px;
+    font-size: 1.2em;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -299,19 +375,16 @@ input[type="text"] {
 
 #activite {
 
-    padding-bottom: 50px;
+    padding: 30px;
 }
 
 #Activites_groupe {
-    width: 95%;
     display: flex;
     justify-content: space-between;
 }
 
 #activite h2 {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    padding-left: 35px;
+    padding-bottom: 30px;
 }
 
 #activite H3 {
